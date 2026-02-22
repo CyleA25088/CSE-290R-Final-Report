@@ -46,9 +46,7 @@ To ensure the links work correctly, maintain the following directory layout:
 1. **Local Testing:** Open `index.html` in any modern browser. Use **F12 (Inspect)** to toggle "Device Toolbar" and test the mobile menu at widths below **768px**.
 
 
-2. 
-**Hosting:** * **GitHub Pages:** Push the entire folder structure to a GitHub repository and enable "Pages" in the settings.
+2. **Hosting:** * **GitHub Pages:** Push the entire folder structure to a GitHub repository and enable "Pages" in the settings.
 
 
-* 
-**Absolute Paths:** If moving to a professional server, you can transition from `../js/main.js` to `/js/main.js` for more robust linking.
+* **Absolute Paths:** If moving to a professional server, you can transition from `../js/main.js` to `/js/main.js` for more robust linking.

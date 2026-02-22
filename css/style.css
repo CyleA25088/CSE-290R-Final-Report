@@ -1,0 +1,135 @@
+/* --- DESIGN SYSTEM --- */
+:root {
+    --primary: #2563eb;
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --text: #334155;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--white);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* --- NAVIGATION --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background: var(--white);
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+/* --- BURGER BUTTON --- */
+.burger {
+    display: none; /* Hidden on desktop */
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--dark);
+    margin: 5px;
+}
+
+/* --- HERO & CONTENT --- */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+    background: var(--light);
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+/* --- CONTACT FORM --- */
+#contact-form {
+    display: grid;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 2rem 0;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+/* UTILITIES */
+.hidden { display: none; }
+.error-border { border: 2px solid red !important; }
+
+/* --- MOBILE RESPONSIVE (THE ISSUE FIX) --- */
+@media screen and (max-width: 768px) {
+    .burger {
+        display: block; /* Show burger */
+    }
+
+    .nav-links {
+        display: none; /* HIDE menu by default on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Right below the navbar */
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        padding: 2rem;
+        border-bottom: 2px solid var(--primary);
+        text-align: center;
+        z-index: 100;
+    }
+
+    /* This class is added by JS - It forces the menu to show */
+    .nav-links.nav-active {
+        display: flex;
+    }
+}

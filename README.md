@@ -10,43 +10,34 @@ A lightweight, three-page portfolio built with vanilla HTML, CSS, and JavaScript
 
 To ensure the links work correctly, maintain the following directory layout:
 
-* 
-`/index.html` (Home Page) 
+* `/index.html` (Home Page) 
 
 
-* 
-`/about/index.html` (About Page) 
+* `/about/index.html` (About Page) 
 
 
-* 
-`/contact/index.html` (Contact Page) 
+* `/contact/index.html` (Contact Page) 
 
 
-* 
-`/css/style.css` (Global Styles) 
+* `/css/style.css` (Global Styles) 
 
 
-* 
-`/js/main.js` (Navigation & Validation Logic) 
+* `/js/main.js` (Navigation & Validation Logic) 
 
 
 
 #### **Key Technical Features**
 
-* 
-**Path Management:** Uses relative pathing (`../`) to allow shared assets (CSS/JS) to be accessed by pages nested in subdirectories.
+* **Path Management:** Uses relative pathing (`../`) to allow shared assets (CSS/JS) to be accessed by pages nested in subdirectories.
 
 
-* 
-**Mobile-First Navigation:** A custom "Burger" menu that toggles visibility via JavaScript without heavy animation libraries.
+* **Mobile-First Navigation:** A custom "Burger" menu that toggles visibility via JavaScript without heavy animation libraries.
 
 
-* 
-**Form UX:** Includes basic JavaScript validation to prevent empty submissions and provide immediate user feedback.
+* **Form UX:** Includes basic JavaScript validation to prevent empty submissions and provide immediate user feedback.
 
 
-* 
-**Accessibility:** Utilizes semantic tags like `<header>`, `<main>`, and `<nav>` to improve SEO and screen reader compatibility.
+* **Accessibility:** Utilizes semantic tags like `<header>`, `<main>`, and `<nav>` to improve SEO and screen reader compatibility.
 
 
 
